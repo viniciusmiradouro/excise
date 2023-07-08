@@ -14,5 +14,5 @@ def excision(file_path: FilePath, start_line: PositiveInt, end_line: PositiveInt
         None
     """
     lines = file_path.read_text().splitlines()
-    selected_lines = ''.join(lines[start_line - 1:end_line])
+    selected_lines = '\n'.join(lines[start_line - 1:end_line])
     print(selected_lines)
